@@ -58,9 +58,15 @@ h3 {
 
 #trip-form-head {
   color: #ffffff;
-  background: #333;
 }
 
+h2, h3, p {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
 
 
 /* .trip-form-well {
