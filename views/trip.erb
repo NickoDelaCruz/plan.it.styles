@@ -1,0 +1,32 @@
+<div class="ext-box">
+  <div class="int-box">
+    <div class="container">
+      <div classs="header">
+        <div class="container">
+
+          <div class="well">
+            <div class="trip-form-well">
+              <form action="/trips/<%= @trip.id %>" method="post">
+                <input id="trip_id" name="trip_id" type="hidden" value="<%= @trip.id %>">
+                <label for="description"></label>
+                <input type="text" name="description">
+                <button type="submit">Add Activity</button>
+              </form>
+              <h3 class="details">Start date of trip: <%= @trip.start_date %></h3>
+              <h3 class="details">End date of trip: <%= @trip.end_date %></h3>
+              <br>
+              <h3 class="details"><%= @current['summary'] %></h3>
+              <h3 class="details"><%= @current['daily'] %></h3>
+              <h3 class="details"><%= @current['temperature'] %></h3>
+              <ul>
+                <% @trip.activities.each do |trip_activity| %>
+                  <li id="activity"><%= trip_activity.description %></li>
+                <% end %>
+              </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

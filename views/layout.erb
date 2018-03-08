@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../css/styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <title>Travel Planit</title>
+  </head>
+  <body>
+    <div class='container'>
+
+      <div class="header">
+        <div class="logo">
+          <h1 class="main-head">Travel Plan.It</h1>
+        </div>
+      </div>
+        <div class="nav">
+          <ul>
+            <li><a href="/user/:id">Home</a></li>
+            <li><a>About</a>
+              <ul>
+                <li><a>Our Team</a></li>
+                <li><a>Contact</a></li>
+                <li><a>FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>

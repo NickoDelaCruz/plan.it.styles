@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: travel_planit_development
+  username: befatal
+  password: happy123
+  pool: 5
+  timeout: 5000
+test:
+  adapter: postgresql
+  database: travel_planit_test
+  username: befatal
+  password: happy123
+  pool: 5

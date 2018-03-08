@@ -1,0 +1,47 @@
+<br>
+
+<div class="ext-box">
+  <div class="int-box">
+    <div class="container">
+      <div classs="header">
+        <div class="container">
+          <div class="well">
+            <div class="trip-form-well">
+              <form action="/users/<%= @user.id %>" method="post">
+                <input id="user_id" name="user_id" type="hidden" value="<%= @user.id %>">
+                <div class="form-group">
+                  <label for="form-instructions"><p id="trip-form-head"> Please fill out the form!</p></label>
+                  <br>
+                  <input id="trip_name" name="trip_name" type="text" placeholder="Enter destination">
+                </div>
+
+                <div class="form-group">
+                  <input id="start_date" name="start_date" type="date" placeholder="Enter trip start date">
+                </div>
+
+                <div class="form-group">
+                  <input id="end_date" name="end_date" type="date" placeholder="Enter trip end date">
+                </div>
+
+                <div class="form-group">
+                  <input id="latitude" name="latitude" type="text" placeholder="Enter location latitude">
+                </div>
+
+                <div class="form-group">
+                  <input id="longitude" name="longitude" type="text" placeholder="Enter location longitude">
+                </div>
+
+                <button type="submit" name="submit" class="btn btn-success">Submit</button>
+
+                <h3>Hello <%= @user.name %>, let's plan your trip!!</h3>
+
+                <h3 id="user_link"><a href="/users/<%= @user.id %>/trips">Click here to see all of your trips</a></h3>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
